@@ -5,7 +5,7 @@ import pandas as pd
 #Function for getting data
 def get_data(limit=None):
     print("Reading in and transforming data...")
-    df = pd.read_csv('../ML/hw05_data_set.csv')
+    df = pd.read_csv('hw05_data_set.csv')
     data = df.as_matrix()
     #Shuffling data so that learning and testing
     np.random.shuffle(data)

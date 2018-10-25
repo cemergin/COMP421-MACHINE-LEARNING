@@ -7,11 +7,11 @@ import sys
 
 def get_training_data(limit=None):
     print("Reading in and transforming training data...")
-    df = pd.read_csv('../ML/hw06_mnist_training_digits.csv',header=None)
+    df = pd.read_csv('hw06_mnist_training_digits.csv',header=None)
     data = df.as_matrix()
     D = data[:,]
 
-    df2 = pd.read_csv('../ML/hw06_mnist_training_labels.csv', header=None)
+    df2 = pd.read_csv('hw06_mnist_training_labels.csv', header=None)
     data2 = df2.as_matrix()
     L = data2[:,]
 
@@ -19,11 +19,11 @@ def get_training_data(limit=None):
 
 def get_testing_data(limit=None):
     print("Reading in and transforming testing data...")
-    df = pd.read_csv('../ML/hw06_mnist_test_digits.csv', header = None)
+    df = pd.read_csv('hw06_mnist_test_digits.csv', header = None)
     data = df.as_matrix()
     D = data[:,]
 
-    df = pd.read_csv('../ML/hw06_mnist_test_labels.csv', header = None)
+    df = pd.read_csv('hw06_mnist_test_labels.csv', header = None)
     data = df.as_matrix()
     L = data[:,]
 
